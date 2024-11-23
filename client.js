@@ -13,6 +13,8 @@ const connect = function () {
 
   const name = "ABC"; // Change this to any three-letter string
     conn.write(`Name: ${name}`);
+
+    conn.write("Move: up");
   });
 
   conn.on("data", (data) => {
